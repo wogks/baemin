@@ -73,16 +73,18 @@ class BaeminMain extends StatelessWidget {
                   ),        
                   Flexible(
                     child: Card(
-                                            shape: RoundedRectangleBorder(
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                      semanticContainer: true,
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0)
                       ),
                       child: Container(
+                        child: Image.network('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000',fit: BoxFit.fill,),
                       height: 200,
-                  
                       
                     ),
                     ),
-                  ),         
+                  ),        
                 ],
               ),
             ),
