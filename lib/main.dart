@@ -85,36 +85,53 @@ class BaeminMain extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 130,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.green
-                ),
-                child:  Row(
-                  children: [
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('data'),
-                            Text('data'),
-                            Text('data')
-                          ],
-                        ),
-                      ),
+            Stack(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 130,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.green
                     ),
-                    Image.asset('assets/sd.png',
-                    width: 100,),
-                    SizedBox(
-                      width: 8,
-                    )
-                  ],
+                    child:  Row(
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('data'),
+                                Text('data'),
+                                Text('data')
+                              ],
+                            ),
+                          ),
+                        ),
+                        Image.asset('assets/sd.png',
+                        width: 100,),
+                        const SizedBox(
+                          width: 8,
+                        )
+                      ],
+                    ),
+                  ),
                 ),
-              ),
+                Positioned(
+                  bottom: 20, right: 20,
+                  child: Container(
+                              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  color: Colors.black
+                              ),
+                              child: const Padding(
+                  padding: EdgeInsets.fromLTRB(16, 4, 16, 4),
+                  child: Text('4 / 6 모두보기',style: TextStyle( color: Colors.white),),
+                              ),
+                            ),
+                ),
+              ],
             ),
           ],
         ),
