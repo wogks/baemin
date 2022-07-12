@@ -53,49 +53,95 @@ class BaeminMain extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  Flexible(
-                    child: Card(
-                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                      semanticContainer: true,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0)
-                      ),
-                      child: Container(
-                        child: Image.network('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000',fit: BoxFit.fill,),
-                      height: 200,
-                      
-                    ),
-                    ),
-                  ),        
-                  Flexible(
-                    child: Card(
-                      clipBehavior: Clip.antiAliasWithSaveLayer,
-                      semanticContainer: true,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0)
-                      ),
-                      child: Container(
-                        child: Image.network('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000',fit: BoxFit.fill,),
-                      height: 200,
-                      
-                    ),
-                    ),
-                  ),        
-                ],
-              ),
+            Stack(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Flexible(
+                        child: Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          semanticContainer: true,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0)
+                          ),
+                          child: Container(
+                            child: Image.network('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000',fit: BoxFit.fill,),
+                          height: 200
+                        ),
+                        ),
+                      ),        
+                   
+                      Flexible(
+                        child: Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          semanticContainer: true,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0)
+                          ),
+                          child: Container(
+                            child: Image.network('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000',fit: BoxFit.fill,),
+                          height: 200,
+                          
+                        ),
+                        ),
+                      ),        
+                    ],
+                  ),
+                ),
+                Text('배달'),
+                Text('asda'),
+              ],
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 100,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.blue
-                ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Flexible(
+                        child: Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          semanticContainer: true,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0)
+                          ),
+                          child: Container(
+                          height: 100
+                        ),
+                        ),
+                      ),        
+                      Flexible(
+                        child: Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          semanticContainer: true,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0)
+                          ),
+                          child: Container(
+                          height: 100
+                        ),
+                        ),
+                      ),      
+                      Flexible(
+                        child: Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          semanticContainer: true,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0)
+                          ),
+                          child: Container(
+                          height: 100
+                        ),
+                        ),
+                      ),      
+                      
+                    ],
+                  )
+                ],
               ),
             ),
             Stack(
