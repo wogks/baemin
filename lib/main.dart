@@ -58,17 +58,28 @@ class BaeminMain extends StatelessWidget {
               child: Row(
                 children: [
                   Flexible(
-                    child: Card(child: Container(
+                    child: Card(
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                      semanticContainer: true,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0)
+                      ),
+                      child: Container(
+                        child: Image.network('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000',fit: BoxFit.fill,),
                       height: 200,
-                      color: Colors.redAccent,
+                      
                     ),
                     ),
                   ),        
                   Flexible(
-                    child: Card(child: Container(
+                    child: Card(
+                                            shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0)
+                      ),
+                      child: Container(
                       height: 200,
                   
-                      color: Colors.redAccent,
+                      
                     ),
                     ),
                   ),         
@@ -123,7 +134,7 @@ class BaeminMain extends StatelessWidget {
                   child: Container(
                               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color: Colors.black
+                  color: Colors.black.withOpacity(0.6)
                               ),
                               child: const Padding(
                   padding: EdgeInsets.fromLTRB(16, 4, 16, 4),
@@ -133,6 +144,53 @@ class BaeminMain extends StatelessWidget {
                 ),
               ],
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 10,
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Flexible(
+                      child: Column(
+                        children: [
+                          Icon(Icons.access_time_filled),
+                          Text('asdas')
+                        ],
+                      ),
+                    ),
+                    Container(width: 1,height: 50,color: Colors.grey,),
+                    Flexible(
+                      child: Column(
+                        children: [
+                          Icon(Icons.access_time_filled),
+                          Text('asdas')
+                        ],
+                      ),
+                    ),
+                    Container(width: 1,height: 50,color: Colors.grey,),
+                    Flexible(
+                      child: Column(
+                        children: [
+                          Icon(Icons.access_time_filled),
+                          Text('asdas')
+                        ],
+                      ),
+                    ),
+                    Container(width: 1,height: 50,color: Colors.grey,),
+                    Flexible(
+                      child: Column(
+                        children: [
+                          Icon(Icons.access_time_filled),
+                          Text('asdas')
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
         ]
