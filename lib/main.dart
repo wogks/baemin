@@ -194,48 +194,59 @@ class BaeminMain extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Card(
-                elevation: 10,
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Flexible(
-                      child: Column(
-                        children: [
-                          Icon(Icons.access_time_filled),
-                          Text('asdas')
-                        ],
+              child: Container(
+                
+                height: 90,
+                child: Card(   
+                  shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0)
+                          ),       
+                  elevation: 10,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Flexible(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.access_time_filled),
+                            Text('asdas')
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(width: 1,height: 50,color: Colors.grey,),
-                    Flexible(
-                      child: Column(
-                        children: [
-                          Icon(Icons.access_time_filled),
-                          Text('asdas')
-                        ],
+                      Container(width: 1,height: 80,color: Colors.grey,),
+                      Flexible(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.access_time_filled),
+                            Text('asdas')
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(width: 1,height: 50,color: Colors.grey,),
-                    Flexible(
-                      child: Column(
-                        children: [
-                          Icon(Icons.access_time_filled),
-                          Text('asdas')
-                        ],
+                      Container(width: 1,height: 80,color: Colors.grey,),
+                      Flexible(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.access_time_filled),
+                            Text('asdas')
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(width: 1,height: 50,color: Colors.grey,),
-                    Flexible(
-                      child: Column(
-                        children: [
-                          Icon(Icons.access_time_filled),
-                          Text('asdas')
-                        ],
+                      Container(width: 1,height: 80,color: Colors.grey,),
+                      Flexible(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.access_time_filled),
+                            Text('asdas')
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             )
