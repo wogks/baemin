@@ -90,8 +90,18 @@ class BaeminMain extends StatelessWidget {
                     ],
                   ),
                 ),
-                Text('배달'),
-                Text('asda'),
+                Positioned(
+                  left:30, top: 50,
+                  child: Text('배달',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)),
+                Positioned(
+                  left: 30, top: 100,
+                  child: Text('세상은 넓고 맛집은 많다',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15))),
+                  Positioned(
+                  right:125, top: 50,
+                  child: Text('배민',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)),
+                Positioned(
+                  right: 40, top: 100,
+                  child: Text('한번에 한집만 배달해요',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15)))
               ],
             ),
             Padding(
