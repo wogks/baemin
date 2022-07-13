@@ -41,7 +41,7 @@ class BaeminMain extends StatelessWidget {
                 color: Color(0xFF5EBEBB),
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(15),bottomRight: Radius.circular(15))
               ),
-              height: 50,
+              
               child: const Padding(
                 padding: EdgeInsets.all(16.0),
                 child: TextField(
